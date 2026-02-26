@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import axios from "axios";
 import HomeItem from "../components/HomeItem";
+import API_BASE from "../config/api";
 
-const API = "http://localhost:8080/api";
+const API = API_BASE;
 
 const Home = () => {
   const [products, setProducts] = useState([]);

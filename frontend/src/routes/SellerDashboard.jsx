@@ -2,8 +2,9 @@ import { useState, useEffect, useCallback } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import API_BASE from "../config/api";
 
-const API = "http://localhost:8080/api";
+const API = API_BASE;
 
 const CATEGORIES = ["Men", "Women", "Kids", "Home & Living", "Beauty", "Studio"];
 

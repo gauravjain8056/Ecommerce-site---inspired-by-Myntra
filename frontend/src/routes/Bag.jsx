@@ -3,8 +3,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { bagActions } from "../store/bagSlice";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import API_BASE from "../config/api";
 
-const API = "http://localhost:8080/api";
+const API = API_BASE;
 
 const Bag = () => {
   const cartItems = useSelector((store) => store.bag);

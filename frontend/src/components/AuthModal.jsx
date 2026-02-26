@@ -2,8 +2,9 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import axios from "axios";
 import { loginSuccess } from "../store/authSlice";
+import API_BASE from "../config/api";
 
-const API = "http://localhost:8080/api/auth";
+const API = API_BASE + "/auth";
 
 const AuthModal = ({ onClose }) => {
     const dispatch = useDispatch();
